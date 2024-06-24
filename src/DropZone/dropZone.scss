@@ -1,0 +1,35 @@
+$image-width: 120px;
+
+.DropZoneWithPreview {
+    &__dropZone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: $image-width;
+        height: $image-width;
+        border: 1px dotted;
+        border-radius: 2px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__preview {
+        position: relative;
+        width: $image-width;
+        height: $image-width;
+
+        &__remove-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
